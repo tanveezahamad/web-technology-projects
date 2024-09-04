@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>web profile</title>
+  <link href="Home.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+  <div class="Home">
+    <center>
+      <nav>
+        <div>
+          <center>
+            <span><a href="">Home</a></span>
+            <span><a href="Education.html">Education</a></span>
+            <span><a href="">Projects</a></span>
+            <!--<span><a href="">Open Source</a></span>
+            <span><a href="">Hall of Frames</a></span>-->
+            <span><a href="contactme.html">Contact Me</a></span>
+          </center>
+        </div>
+      </nav>
+      <main>
+        <section class="firstsection">
+          <div class="leftsection"><span class="name">Hey, I'm Raju Repalle</span>
+            <div>
+              <p id="caption">passionate </p>
+            </div>
+            <div onreset="display()" id="skills"></div>
+            <span id="element"></span>
+            <!-- Setup and start animation! -->
+            <script>
+              var typed = new Typed('#element', {
+
+                strings: ['API Security Researcher', 'Bug Bounty Hunter', 'web developer', 'Cyber Security Engineer'],
+                typeSpeed: 80,
+              });
+            </script>
+            <div class="contact">
+              <span class="medium"><a href="https://www.instagram.com/__r_a_j_u_._/" target="_blank"><img
+                    src="github.png" alt="github" height="40" width="40"></a> </span>
+              <span class="medium"><a href="https://www.linkedin.com/in/raju-repalle-a63a88249/" target="_blank"><img
+                    src="linkedin.png" alt="linkedin" height="40" width="40"></a> </span>
+              <span class="medium"><a
+                  href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJNqLdTLLLGGKLJTdXxBJvMrJrScVPPFKqJMcJMjKVkFBfhBnDbXdzfJschGfxgrbTdjtnq"
+                  target="_blank"><img src="gmail.png" alt="gmail" height="40" width="40"></a> </span>
+              <span class="medium"><a href="https://www.instagram.com/__r_a_j_u_._/" target="_blank"><img
+                    src="instagram.png" alt="instagram" height="40" width="40"></a> </span>
+            </div>
+            <div>
+              <!--<button id="projects"><a href="">My projects</a></button>-->
+              <button><a href="/contact/rajucv.pdf" download="raju's CV">Download Resume</a></button>
+            </div>
+          </div>
+          <div class="rightsection"><img
+              src="engineer.jpeg"
+              alt="ENGINEER">
+          </div>
+        </section>
+
+      </main>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

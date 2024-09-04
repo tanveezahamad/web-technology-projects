@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Young+Serif&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            background-color: #163d50;
+            color: white;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+             justify-content: space-between;
+            
+        }
+        #two,#three,#four{
+        background: rgba(76, 35, 35, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(76, 35, 35, 0.3);
+        }
+        .o{
+            color: #fdd663;
+        }
+        .headings{
+            font-size: 1.5rem;
+            font-family: 'GFS Didot', serif;
+
+        }
+        .results{
+            font-size: 2rem;
+            font-family: 'Young Serif', serif;
+        }
+        .resultsone{
+            font-family: 'Young Serif', serif;
+            font-size: 20px;
+
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+        }
+        .uni{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        #one{
+            grid-area: 1/1/-1/2;
+            border-right: none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+
+            
+        }
+        .oneOne{
+            font-size: 12px;
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+            margin: 0;
+        }
+        .oneOne span.o{
+            font-size: 20px;
+        }
+        .mahesh{
+            font-size: 30px;
+        }
+        .oneOnetwo{
+            font-size: 12px;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        
+        #two{
+            grid-area: 1/2/2/3;
+            justify-content: center;
+            border-right: none;
+            border-bottom: none;
+            border-top-left-radius: none;
+        }
+        #three{
+            grid-area: 2/2/-1/-1;
+            justify-content: space-evenly;
+            border-top: none;
+            border-bottom-left-radius: none;
+            border-bottom-right-radius: 16px;
+        }
+        #four,#five{
+            grid-area: auto;
+            justify-content: space-evenly;
+            border-left: none;
+            border-bottom: none;
+            border-top-right-radius: 16px;
+        }
+        #four>div{
+            justify-content: space-evenly;
+
+        }
+        #one>img{
+            border-radius: 10px;
+            margin: 0px;
+            padding: 0;
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h3{
+            margin: 0;
+        }
+        
+        div#one>div#o{
+            margin-right: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        #searchdiv{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+        h3.headings>span{
+            color: #fdd663;
+        }
+        #qwe{
+            border-radius: 5px;
+            background-color: #fdd663;
+            
+        }
+        .glass{
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        
+        }
+        .foot{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .footone{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .fo{
+    background: rgba(84, 148, 150, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+        }
+        @media(max-width:1000px){
+            .container{
+                width: 90%;
+            }
+
+        }
+        @media(max-width:970px){
+            .results{
+                font-size: 1.5rem;
+            }
+
+        }
+       
+        @media (max-width:850px ){
+
+            .results{
+                font-size: 1.5rem;
+            }
+            
+            .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 2fr 1fr 1fr;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            }
+            #one{
+                grid-area: 1/1/2/-1;
+                margin-bottom: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 16px;
+                
+            }
+            #two,#three,#four{
+            background: rgba(76, 35, 35, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            #two{
+                grid-area: 2/1/3/2;
+                border-right: none;
+                border-bottom: none;
+                border-top-left-radius: 16px;
+            }
+            #three{
+                grid-area: 2/2/-1/-1;
+                justify-content: center;
+                border-left: none;
+                border-top-right-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
+            #four{
+                grid-area: 3/1/-1/2;
+                border-top: none;
+                border-right: none;
+                border-bottom-left-radius: 16px;
+            }
+            
+            
+
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <form action="./w.php" method="post">
+        <div class="header">
+            <div>
+                <img id="dimg_9" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAdVJREFUaN7tmc1thDAQRimBElwCJVBCSvAxR5fgEiiBEiiBErhyIx24A2cc2WhiAf4ZA1rJkZ4UZZPN9/AwHrON1rr5ZJoqUAWqQBWoAlWgxJf++WaAAGZAAdpD2dfM7zDS/yopAGE6YDoIHMLIdK8KQIAWGIAtQ8Bh/r59bQWQjCBILCkSJIF1XVuAA9Jivm9ROd0ukS0AQTtgA7SH+Vn31EoEBSAMA2YUUAHiJDyWcCtBuidIArZEroJewVEpjQSJjiIgMsMbpHdjf53sCcEWSxEYCQKOyZQhkshZBZYkYEtHeLVPQSGJnHIS0QI2/FIo+L+VILTXOUVA3BD+D3Q/pAqoFIEebUxFQQLJN/Ojo0TEqDG/JgBv1hdgeVNAP4CKPSvkCKiCQc1KSMRs2+x902hO/Z4cYFhgWOQHY8zo9hOKgCCGH71BEXcqHjEBKDft5gowypVH4YeLgKE9ZSO10cxz7z7TFJqxOEUgZxyYbPi+0M4uSRuZPYCnCPBA6TwrYCWWyFbJImo/FTMpM6pAG5CYvDO0LDii7x2JNAtdSGxuQyp41Q87UqkHW8NJzYsbw+8d6Y5Hi+7qbw8IyOIPd9HRVD8qUD8fqAJVoApUgSrwqfwCJ6xaZshM+xMAAAAASUVORK5CYII=" >
+            </div>
+            <h1 style="font-size: 3rem; margin-top: 0;" >Weather Podcast</h1>
+            <div id="loc" style="display: flex;">
+                <img src="./placeholder.png" alt="location Image" style="width: 48px; height: 48px;">
+                <p style="font-size: 30px; margin-bottom: 0; margin-top: 10px;" ><span id="changeName">Delhi</span></p>
+            </div>
+        </div>
+        <div id="searchdiv">
+            <h3 class="headings">Enter <span>city</span> Name</h3>
+            <div>
+                <input type="text" name="city" placeholder="Enter" spellcheck="true" id="fy" style="font-size: 15px;">
+                <button type="submit" id="qwe" name="search">Search</button>
+            </div>
+        </div>
+        
+        <div class="container " >
+             <div id="one" class="uni glass">
+                <img src="./pngwing.com.png" alt="Gif of different weathers"  id="imdId"/>
+                <h1 style=" margin: 0;">Current Temparature:</h1>
+                <h2 name="current_temp" ><span id="temp"  class="styleNum results">--/--</span><span class="o mahesh">°c</span> </h2>
+                <div class="oneOne">
+                    <div class="oneOnetwo">
+                        <h4 style="margin-bottom: 0;" >Feels like:</h4>
+                        <h5> <span id="feels_like" class="resultsone" >--/--</span><span class="o">°c</span> </h5>
+                    </div>
+                    <div>
+                        <h4>Min Temp: <span id="min_temp" class="resultsone">--/--</span><span class="o">°c</span> </h4>
+                        <h4>Max Temp: <span id="max_temp" class="resultsone">--/--</span><span class="o">°c</span>  </h4>
+                    </div>
+                </div>
+             </div>
+             <div id="two" class="uni">
+                <h3 class="headings">Humidity</h3>
+                <h3><span id="humidity" class="results">--/--</span><span class="o mahesh">°c</span>  </h3>
+             </div>
+             <div id="three" class="uni">
+                <h3 class="headings">Wind Speed</h3>
+                <h3><span id="wind_speed" class="results" style="font-size: 2.5rem;">---/--</span><span class="results"><span class="o">m/s</span></span></h3>
+             </div>
+             <div id="four" class="uni">
+                <div class="uni">
+                    <h3 class="headings">Date</h3>
+                    <h3><span id="dat" class="results">---</span></h3>
+                </div>
+                <div class="uni">
+                    <h3 class="headings">Time</h3>
+                    <h3><span id="ti" class="results">---</span></h3>
+                </div>
+                
+             </div>
+        </div>
+        <span id="six"></span>
+        <footer class="fo" style="margin-top: 10px;">
+            <div class="foot">
+                <div><p id="copy" class="footPara">©Designed And Developed By IOT students</p></div>
+                <div id="footone" style="margin-top: 16px;">
+                    <a href="https://www.mbu.asia/" style="text-decoration: none; color: white; margin: 16px;">Contact</a>
+                    <a href="./about.html" style="text-decoration: none; color: white; margin: 16px;">About</a>
+                </div>
+                
+            </div>
+        </footer>
+    </form>
+
+    <script type="text/javascript">
+    const options = {
+	method: 'GET',
+	    headers: {
+		    'X-RapidAPI-Key': '438afdcebbmshf3ab3fb92e3f1a2p10145fjsnfdc0bafd230c',
+		    'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+	    }
+    };
+    const get = (city)=>{
+        try {
+            fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+ city, options)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+					temp.innerHTML = data.temp
+					feels_like.innerHTML = data.feels_like
+					humidity.innerHTML = data.humidity
+					min_temp.innerHTML = data.min_temp
+					max_temp.innerHTML = data.max_temp
+					wind_speed.innerHTML = data.wind_speed
+					wind_degrees.innerHTML = data.wind_degrees
+        })}
+        catch (error) {
+	        console.error(error);
+        }
+    }
+	let currentDate = new Date();
+	let day = currentDate.getDate();
+	let mo = currentDate.getMonth()+1;
+	let y = currentDate.getFullYear();
+	let da = day+"<span style='color:#fdd663'>-</span>"+mo+"<span style='color:#fdd663'>-</span>"+y
+
+	console.log(currentDate);
+	dat.innerHTML = da;
+	var h = currentDate.getHours();
+	var m = currentDate.getMinutes();
+	var r = h+"<span style='color:#fdd663'>:</span>"+m
+	ti.innerHTML = r;
+    get("Delhi");
+	document.getElementById("qwe").addEventListener("click",z);
+    function z(){
+        changeName.innerHTML = fy.value;
+        get(fy.value);
+
+    }
+
+
+    </script>
+
+</body>
+</html>
